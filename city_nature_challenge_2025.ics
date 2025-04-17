@@ -1,0 +1,273 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//City Nature Challenge 2025//São Paulo//BR
+DESCRIPTION:Eventos do City Nature Challenge 2025 em São Paulo e Região 
+ Metropolitana
+X-WR-CALNAME:City Nature Challenge 2025: São Paulo
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Saída de observação
+DTSTART:20250425T090000
+DTEND:20250425T160000
+UID:cnc2025-sp-0@citynaturechallenge.org
+DESCRIPTION:Local: Parque Estadual Cantareira - Núcleo Cabuçu\nEndereço
+ : Av. Pedro de Souza Lopes 7903\, Guarulhos\, SP\, 07074-000\nAcesso: PÚB
+ LICO\nArticulação Juliana França
+LOCATION:Av. Pedro de Souza Lopes 7903\, Guarulhos\, SP\, 07074-000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Saída de observação
+DTSTART:20250425T090000
+DTEND:20250425T120000
+UID:cnc2025-sp-1@citynaturechallenge.org
+DESCRIPTION:Local: Parque Estadual Jaraguá\nEndereço: Rua Antônio Cardo
+ so Nogueira\, 539\, São Paulo\nAcesso: PÚBLICO\nArticulação  Juliana F
+ rança
+LOCATION:Rua Antônio Cardoso Nogueira\, 539\, São Paulo
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza
+DTSTART:20250425T090000
+DTEND:20250425T110000
+UID:cnc2025-sp-2@citynaturechallenge.org
+DESCRIPTION:Local: Parque Previdência\nEndereço: Rua Pedro Peccinini\, 8
+ 8 \, São Paulo - SP\, 05532-030\nAcesso: PÚBLICO\nArticulação Marcio M
+ oreira
+LOCATION:Rua Pedro Peccinini\, 88 \, São Paulo - SP\, 05532-030
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza - Alunos Biologia USP
+DTSTART:20250425T100000
+DTEND:20250425T110000
+UID:cnc2025-sp-3@citynaturechallenge.org
+DESCRIPTION:Local: Matinha da Bio - USP\nEndereço: Rua do Matão\, 277 - 
+ Cidade Universitária - Butantã\, 05508-090 \nAcesso: PÚBLICO\nArticula
+ ção Enrico e José (RBN) + EB
+LOCATION:Rua do Matão\, 277 - Cidade Universitária - Butantã\, 05508-09
+ 0 
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza - Alunos Biologia USP
+DTSTART:20250425T140000
+DTEND:20250425T150000
+UID:cnc2025-sp-4@citynaturechallenge.org
+DESCRIPTION:Local: Matinha da Bio - USP\nEndereço: Rua do Matão\, 277 - 
+ Cidade Universitária - Butantã\, 05508-090 \nAcesso: PÚBLICO\nArticula
+ ção  Enrico e José (RBN) + EB
+LOCATION:Rua do Matão\, 277 - Cidade Universitária - Butantã\, 05508-09
+ 0 
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Construindo um Condomínio de Insetos
+  - Ensinar os alunos sobre a importância dos insetos para a biodiversidad
+ e urbana e como podemos ajudar a criar espaços que favoreçam sua presen
+ ça e sobrevivência.
+DTSTART:20250425T090000
+DTEND:20250425T110000
+UID:cnc2025-sp-5@citynaturechallenge.org
+DESCRIPTION:Local: UMAPAZ Escola de Agroecologia de Parelheiros – Parque
+  Nascente do Ribeirão Colônia\nEndereço: Estr. dá Colônia Mário Reim
+ berg Christe\, 2500 - Jardim Novo - Parelheiros\nAcesso: PÚBLICO\nArticul
+ ação José Francisco Armelin (UMAPAZ)
+LOCATION:Estr. dá Colônia Mário Reimberg Christe\, 2500 - Jardim Novo -
+  Parelheiros
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Identificação das Espécies na Tril
+ ha do Jequitibá
+DTSTART:20250425T090000
+DTEND:20250425T110000
+UID:cnc2025-sp-6@citynaturechallenge.org
+DESCRIPTION:Local: CEA Previdência – Parque Previdência\nEndereço: Ru
+ a Pedro Peccinini\, 88 – Instituto Previdência\nAcesso: PÚBLICO\nArtic
+ ulação Juliana (UMAPAZ)
+LOCATION:Rua Pedro Peccinini\, 88 – Instituto Previdência
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vem Passarinhar Sampa edição Desafio da Natureza Urbana - Ativid
+ ade de observação da natureza com foco na observação de aves
+DTSTART:20250426T070000
+DTEND:20250426T100000
+UID:cnc2025-sp-7@citynaturechallenge.org
+DESCRIPTION:Local: Parque Municipal Leopoldina - Orlando Villas-Bôas\nEnd
+ ereço: Av. Emb. Macedo Soares\, 8000 - Vila Leopoldina\, São Paulo - SP\
+ , 05307-200\nAcesso: PÚBLICO\nArticulação Giovanni (DFS/SVMA)
+LOCATION:Av. Emb. Macedo Soares\, 8000 - Vila Leopoldina\, São Paulo - SP
+ \, 05307-200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação de Natureza
+DTSTART:20250426T090000
+DTEND:20250426T120000
+UID:cnc2025-sp-8@citynaturechallenge.org
+DESCRIPTION:Local: USP\nEndereço: Av. Prof. Luciano Gualberto\, 380 \, S
+ ão Paulo - SP\, 05508-010\nAcesso: PÚBLICO\nArticulação Marcio Moreira
+  - voluntariado alunos Poli
+LOCATION:Av. Prof. Luciano Gualberto\, 380 \, São Paulo - SP\, 05508-010
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza
+DTSTART:20250426T090000
+DTEND:20250426T120000
+UID:cnc2025-sp-9@citynaturechallenge.org
+DESCRIPTION:Local: Parque CienTec da USP\nEndereço: Av. Miguel Estefano\,
+  4200 - Vila Água Funda\, São Paulo - SP\, 04301-904\nAcesso: PÚBLICO\n
+ Articulação Luca (CienTec) + Enrico (RBN)
+LOCATION:Av. Miguel Estefano\, 4200 - Vila Água Funda\, São Paulo - SP\,
+  04301-904
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação de Natureza
+DTSTART:20250426T180000
+DTEND:20250426T210000
+UID:cnc2025-sp-10@citynaturechallenge.org
+DESCRIPTION:Local: PNM Itaim\nEndereço: R. Amaro Alves do Rosário\, 2676
+  - Parelheiros\, São Paulo - SP\, 04884-000\nAcesso: PÚBLICO\nArticulaç
+ ão  Luccas Longo
+LOCATION:R. Amaro Alves do Rosário\, 2676 - Parelheiros\, São Paulo - SP
+ \, 04884-000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Visita Monitorada nas Trilhas do Parq
+ ue Nascentes do Ribeirão Colônia
+DTSTART:20250426T090000
+DTEND:20250426T110000
+UID:cnc2025-sp-11@citynaturechallenge.org
+DESCRIPTION:Local: UMAPAZ Escola de Agroecologia de Parelheiros – Parque
+  Nascente do Ribeirão Colônia\nEndereço: Estr. dá Colônia Mário Reim
+ berg Christe\, 2500 - Jardim Novo - Parelheiros\nAcesso: PÚBLICO\nArticul
+ ação José Francisco Armelin (UMAPAZ)
+LOCATION:Estr. dá Colônia Mário Reimberg Christe\, 2500 - Jardim Novo -
+  Parelheiros
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana & Dia da Anta - Observação de Naturez
+ a no Dia da Anta
+DTSTART:20250427T080000
+DTEND:20250427T150000
+UID:cnc2025-sp-12@citynaturechallenge.org
+DESCRIPTION:Local: RPPN Sítio Curucutu\nEndereço: Estrada do Capivari\, 
+ Estr. do Curucutu\, 13041\, São Paulo - SP\, 04895-090\nAcesso: PÚBLICO\
+ nArticulação Luccas Longo
+LOCATION:Estrada do Capivari\, Estr. do Curucutu\, 13041\, São Paulo - SP
+ \, 04895-090
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza - Alunos Biologia USP
+DTSTART:20250428T100000
+DTEND:20250428T110000
+UID:cnc2025-sp-13@citynaturechallenge.org
+DESCRIPTION:Local: Matinha da Bio - USP\nEndereço: Rua do Matão\, 277 - 
+ Cidade Universitária - Butantã\, 05508-090 \nAcesso: PÚBLICO\nArticula
+ ção Enrico e José (RBN) + EB
+LOCATION:Rua do Matão\, 277 - Cidade Universitária - Butantã\, 05508-09
+ 0 
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Observação e sensibilização de na
+ tureza - Alunos Biologia USP
+DTSTART:20250428T140000
+DTEND:20250428T150000
+UID:cnc2025-sp-14@citynaturechallenge.org
+DESCRIPTION:Local: Matinha da Bio - USP\nEndereço: Rua do Matão\, 277 - 
+ Cidade Universitária - Butantã\, 05508-090 \nAcesso: PÚBLICO\nArticula
+ ção Enrico e José (RBN) + EB
+LOCATION:Rua do Matão\, 277 - Cidade Universitária - Butantã\, 05508-09
+ 0 
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Abelhando: Observando e Registrando Abelhas - Desafio da Natureza 
+ Urbana - Sensibilizar os alunos para a importância das abelhas na poliniz
+ ação e promover a observação e o registro de suas interações com as 
+ plantas no ambiente urbano.
+DTSTART:20250428T090000
+DTEND:20250428T110000
+UID:cnc2025-sp-15@citynaturechallenge.org
+DESCRIPTION:Local: UMAPAZ Escola de Agroecologia de Parelheiros – Parque
+  Nascente do Ribeirão Colônia\nEndereço: Estr. dá Colônia Mário Reim
+ berg Christe\, 2500 - Jardim Novo - Parelheiros\nAcesso: PÚBLICO\nArticul
+ ação José Francisco Armelin (UMAPAZ)
+LOCATION:Estr. dá Colônia Mário Reimberg Christe\, 2500 - Jardim Novo -
+  Parelheiros
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Atividade de observação da natureza
+  com foco na observação de aves
+DTSTART:20250428T080000
+DTEND:20250428T100000
+UID:cnc2025-sp-16@citynaturechallenge.org
+DESCRIPTION:Local: Viveiro Manequinho Lopes\nEndereço: Av. Quarto Centen
+ ário\, 1268 - Jardim Luzitania\, São Paulo - SP\, 04030-000\nAcesso: PÚ
+ BLICO\nArticulação Requer inscrinção / Giovanni (DFS)\, Anderson e Tha
+ bata (Aventura Ambiental)
+LOCATION:Av. Quarto Centenário\, 1268 - Jardim Luzitania\, São Paulo - S
+ P\, 04030-000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Atividade de observação da natureza
+DTSTART:20250428T140000
+DTEND:20250428T160000
+UID:cnc2025-sp-17@citynaturechallenge.org
+DESCRIPTION:Local: Viveiro Manequinho Lopes\nEndereço: Av. Quarto Centen
+ ário\, 1268 - Jardim Luzitania\, São Paulo - SP\, 04030-000\nAcesso: PÚ
+ BLICO\nArticulação Requer inscrinção / Giovanni (DFS)\, Anderson e Tha
+ bata (Aventura Ambiental)
+LOCATION:Av. Quarto Centenário\, 1268 - Jardim Luzitania\, São Paulo - S
+ P\, 04030-000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana - Atividade de observação da natureza
+DTSTART:20250425T080000
+DTEND:20250425T160000
+UID:cnc2025-sp-18@citynaturechallenge.org
+DESCRIPTION:Local: Parque Estadual da Cantareira - Núcleo Cabuçu\nEndere
+ ço: Av. Pedro de Sousa Lopes\, 7.903 - Jardim São Luís - Guarulhos - SP
+ \, 07075-170\nAcesso: PÚBLICO\nArticulação Monitores do Parque Estadual
+  da Cantareira
+LOCATION:Av. Pedro de Sousa Lopes\, 7.903 - Jardim São Luís - Guarulhos 
+ - SP\, 07075-170
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana  - Atividade de observação da naturez
+ a
+DTSTART:20250426T080000
+DTEND:20250426T120000
+UID:cnc2025-sp-19@citynaturechallenge.org
+DESCRIPTION:Local: Instituto de Biociências da USP\, Reserva do IB e Herb
+ ário da USP.\nEndereço: Rua do Matão\, 277 - Cidade Universitária - 
+ Butantã\, 05508-090 \nAcesso: PÚBLICO\nArticulação Luiz Fernando/CEO +
+ 55 11 99938-9949 / Felipe
+LOCATION:Rua do Matão\, 277 - Cidade Universitária - Butantã\, 05508-09
+ 0 
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana  - Saída para observação da biodiver
+ sidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR
+DTSTART:20250426T070000
+DTEND:20250426T110000
+UID:cnc2025-sp-20@citynaturechallenge.org
+DESCRIPTION:Local: Projeto CAPA - Centro de Apoio e Proteção Animal\nEnd
+ ereço: Av. Magalhães De Castro\, R. Pedro Avancine - Jardim Panorama\, S
+ ão Paulo - SP\, 05679-160\nAcesso: PÚBLICO\nArticulação Luccas Longo &
+  Mariana Aidar/CAPA
+LOCATION:Av. Magalhães De Castro\, R. Pedro Avancine - Jardim Panorama\, 
+ São Paulo - SP\, 05679-160
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Desafio da Natureza Urbana  - Saída para observação da biodiver
+ sidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR
+DTSTART:20250427T070000
+DTEND:20250427T110000
+UID:cnc2025-sp-21@citynaturechallenge.org
+DESCRIPTION:Local: Projeto CAPA - Centro de Apoio e Proteção Animal\nEnd
+ ereço: Av. Magalhães De Castro\, R. Pedro Avancine - Jardim Panorama\, S
+ ão Paulo - SP\, 05679-160\nAcesso: PÚBLICO\nArticulação Luccas Longo &
+  Mariana Aidar/CAPA
+LOCATION:Av. Magalhães De Castro\, R. Pedro Avancine - Jardim Panorama\, 
+ São Paulo - SP\, 05679-160
+END:VEVENT
+END:VCALENDAR

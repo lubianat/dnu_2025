@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Nature Challenge 2025: São Paulo e Região Metropolitana</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 1em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>City Nature Challenge 2025: São Paulo e Região Metropolitana</h1>
+    </header>
+
+    <div class="container">
+
+        <h2>Eventos do City Nature Challenge 2025 na cidade de São Paulo e Região Metropolitana</h2>
+
+        <div class="description">
+            <p>Bem vindos ao City Nature Challenge 2025, também conhecido como Desafio Natureza nas Cidades! Por mais um ano estaremos competindo com cidades do mundo todo com o intuito de mostrar quão grande é a nossa biodiversidade! Seja nos parques, em trilhas, praças, ruas ou quintais, todos os registros são importantes e bem vindos! Então preparem seus celulares, suas câmeras e seus olhos, pois o desafio vai começar!</p>
+        </div>
+
+        <div class="description">
+            <p>Para mais informações sobre o evento e a organização, acesse o projeto no <a href="https://www.inaturalist.org/projects/city-nature-challenge-2025-sao-paulo-e-regiao-metropolitana" target="_blank" style="color: #4CAF50; text-decoration: underline;">iNaturalist</a>.</p>
+        </div>
+
+        <div class="controls">
+            <label for="date-filter">Filtrar por data: </label>
+            <select id="date-filter">
+                <option value="all">Todas as datas</option>
+                <option value="25/04/2025">25/04/2025</option> <option value="26/04/2025">26/04/2025</option> <option value="27/04/2025">27/04/2025</option> <option value="28/04/2025">28/04/2025</option>
+            </select>
+            <button class="btn" id="reset-filter">Mostrar Todos</button>
+            <a href="city_nature_challenge_2025.ics" download class="btn" style="text-decoration: none;">Baixar Calendário (.ics)</a>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <footer>
+        <p> Feito com carinho por <a href="https://tiago.bio.br" target="_blank" style="color: #4CAF50; text-decoration: underline;">Tiago</a>, da <a href="https://redenaturalista.org" target="_blank" style="color: #4CAF50; text-decoration: underline;">Rede Brasileira de Naturalistas</a> para o 2025 City Nature Challenge - São Paulo e Região Metropolitana.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([-23.55, -46.63], 10);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" style="color: #4CAF50; text-decoration: underline;">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Define event data directly in the script
+        const events = [
+            {
+                latitude: -23.4429979,
+                longitude: -46.565857,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "9h",
+                termino: "16h",
+                atividade: "Saída de observação",
+                local: "Parque Estadual Cantareira - Núcleo Cabuçu",
+                endereco: "Av. Pedro de Souza Lopes 7903, Guarulhos, SP, 07074-000",
+                acesso: "PÚBLICO",
+                contato: "Juliana França"
+            }, {
+                latitude: -23.459023,
+                longitude: -46.75530939999999,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "9h",
+                termino: "12h",
+                atividade: "Saída de observação",
+                local: "Parque Estadual Jaraguá",
+                endereco: "Rua Antônio Cardoso Nogueira, 539, São Paulo",
+                acesso: "PÚBLICO",
+                contato: " Juliana França"
+            }, {
+                latitude: -23.5791485,
+                longitude: -46.7264135,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "9h",
+                termino: "11h",
+                atividade: "Observação e sensibilização de natureza",
+                local: "Parque Previdência",
+                endereco: "Rua Pedro Peccinini, 88 , São Paulo - SP, 05532-030",
+                acesso: "PÚBLICO",
+                contato: "Marcio Moreira"
+            }, {
+                latitude: -23.5653415,
+                longitude: -46.7307825,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "10h",
+                termino: "11h30",
+                atividade: "Observação e sensibilização de natureza - Alunos Biologia USP",
+                local: "Matinha da Bio - USP",
+                endereco: "Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 ",
+                acesso: "PÚBLICO",
+                contato: "Enrico e José (RBN) + EB"
+            }, {
+                latitude: -23.5653415,
+                longitude: -46.7307825,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "14h",
+                termino: "15h30",
+                atividade: "Observação e sensibilização de natureza - Alunos Biologia USP",
+                local: "Matinha da Bio - USP",
+                endereco: "Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 ",
+                acesso: "PÚBLICO",
+                contato: " Enrico e José (RBN) + EB"
+            }, {
+                latitude: -23.8416118,
+                longitude: -46.7185262,
+                evento: "Desafio da Natureza Urbana - Construindo um Condomínio de Insetos",
+                data: "25/04/2025",
+                inicio: "09h",
+                termino: "11h",
+                atividade: "Ensinar os alunos sobre a importância dos insetos para a biodiversidade urbana e como podemos ajudar a criar espaços que favoreçam sua presença e sobrevivência.",
+                local: "UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia",
+                endereco: "Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros",
+                acesso: "PÚBLICO",
+                contato: "José Francisco Armelin (UMAPAZ)"
+            }, {
+                latitude: -23.5810587,
+                longitude: -46.72699859999999,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "09h",
+                termino: "11h",
+                atividade: "Identificação das Espécies na Trilha do Jequitibá",
+                local: "CEA Previdência – Parque Previdência",
+                endereco: "Rua Pedro Peccinini, 88 – Instituto Previdência",
+                acesso: "PÚBLICO",
+                contato: "Juliana (UMAPAZ)"
+            }, {
+                latitude: -23.5185372,
+                longitude: -46.7365055,
+                evento: "Vem Passarinhar Sampa edição Desafio da Natureza Urbana",
+                data: "26/04/2025",
+                inicio: "7h",
+                termino: "10h",
+                atividade: "Atividade de observação da natureza com foco na observação de aves",
+                local: "Parque Municipal Leopoldina - Orlando Villas-Bôas",
+                endereco: "Av. Emb. Macedo Soares, 8000 - Vila Leopoldina, São Paulo - SP, 05307-200",
+                acesso: "PÚBLICO",
+                contato: "Giovanni (DFS/SVMA)"
+            }, {
+                latitude: -23.5621068,
+                longitude: -46.72500429999999,
+                evento: "Desafio da Natureza Urbana",
+                data: "26/04/2025",
+                inicio: "9h",
+                termino: "12h",
+                atividade: "Observação de Natureza",
+                local: "USP",
+                endereco: "Av. Prof. Luciano Gualberto, 380 , São Paulo - SP, 05508-010",
+                acesso: "PÚBLICO",
+                contato: "Marcio Moreira - voluntariado alunos Poli"
+            }, {
+                latitude: -23.6492671,
+                longitude: -46.6230801,
+                evento: "Desafio da Natureza Urbana",
+                data: "26/04/2025",
+                inicio: "9h",
+                termino: "12h",
+                atividade: "Observação e sensibilização de natureza",
+                local: "Parque CienTec da USP",
+                endereco: "Av. Miguel Estefano, 4200 - Vila Água Funda, São Paulo - SP, 04301-904",
+                acesso: "PÚBLICO",
+                contato: "Luca (CienTec) + Enrico (RBN)"
+            }, {
+                latitude: -23.8120878,
+                longitude: -46.7268368,
+                evento: "Desafio da Natureza Urbana",
+                data: "26/04/2025",
+                inicio: "18h",
+                termino: "21h",
+                atividade: "Observação de Natureza",
+                local: "PNM Itaim",
+                endereco: "R. Amaro Alves do Rosário, 2676 - Parelheiros, São Paulo - SP, 04884-000",
+                acesso: "PÚBLICO",
+                contato: " Luccas Longo"
+            }, {
+                latitude: -23.8416118,
+                longitude: -46.7185262,
+                evento: "Desafio da Natureza Urbana",
+                data: "26/04/2025",
+                inicio: "09h",
+                termino: "11h",
+                atividade: "Visita Monitorada nas Trilhas do Parque Nascentes do Ribeirão Colônia",
+                local: "UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia",
+                endereco: "Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros",
+                acesso: "PÚBLICO",
+                contato: "José Francisco Armelin (UMAPAZ)"
+            }, {
+                latitude: -23.892974,
+                longitude: -46.617341,
+                evento: "Desafio da Natureza Urbana & Dia da Anta",
+                data: "27/04/2025",
+                inicio: "8h",
+                termino: "15h",
+                atividade: "Observação de Natureza no Dia da Anta",
+                local: "RPPN Sítio Curucutu",
+                endereco: "Estrada do Capivari, Estr. do Curucutu, 13041, São Paulo - SP, 04895-090",
+                acesso: "PÚBLICO",
+                contato: "Luccas Longo"
+            }, {
+                latitude: -23.5653415,
+                longitude: -46.7307825,
+                evento: "Desafio da Natureza Urbana",
+                data: "28/04/2025",
+                inicio: "10h",
+                termino: "11h30",
+                atividade: "Observação e sensibilização de natureza - Alunos Biologia USP",
+                local: "Matinha da Bio - USP",
+                endereco: "Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 ",
+                acesso: "PÚBLICO",
+                contato: "Enrico e José (RBN) + EB"
+            }, {
+                latitude: -23.5653415,
+                longitude: -46.7307825,
+                evento: "Desafio da Natureza Urbana",
+                data: "28/04/2025",
+                inicio: "14h",
+                termino: "15h30",
+                atividade: "Observação e sensibilização de natureza - Alunos Biologia USP",
+                local: "Matinha da Bio - USP",
+                endereco: "Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 ",
+                acesso: "PÚBLICO",
+                contato: "Enrico e José (RBN) + EB"
+            }, {
+                latitude: -23.8416118,
+                longitude: -46.7185262,
+                evento: "Abelhando: Observando e Registrando Abelhas - Desafio da Natureza Urbana",
+                data: "28/04/2025",
+                inicio: "09h",
+                termino: "11h",
+                atividade: "Sensibilizar os alunos para a importância das abelhas na polinização e promover a observação e o registro de suas interações com as plantas no ambiente urbano.",
+                local: "UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia",
+                endereco: "Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros",
+                acesso: "PÚBLICO",
+                contato: "José Francisco Armelin (UMAPAZ)"
+            }, {
+                latitude: -23.5942404,
+                longitude: -46.6628536,
+                evento: "Desafio da Natureza Urbana",
+                data: "28/04/2025",
+                inicio: "08h",
+                termino: "10h",
+                atividade: "Atividade de observação da natureza com foco na observação de aves",
+                local: "Viveiro Manequinho Lopes",
+                endereco: "Av. Quarto Centenário, 1268 - Jardim Luzitania, São Paulo - SP, 04030-000",
+                acesso: "PÚBLICO",
+                contato: "Requer inscrinção / Giovanni (DFS), Anderson e Thabata (Aventura Ambiental)"
+            }, {
+                latitude: -23.5942404,
+                longitude: -46.6628536,
+                evento: "Desafio da Natureza Urbana",
+                data: "28/04/2025",
+                inicio: "14h",
+                termino: "16h",
+                atividade: "Atividade de observação da natureza",
+                local: "Viveiro Manequinho Lopes",
+                endereco: "Av. Quarto Centenário, 1268 - Jardim Luzitania, São Paulo - SP, 04030-000",
+                acesso: "PÚBLICO",
+                contato: "Requer inscrinção / Giovanni (DFS), Anderson e Thabata (Aventura Ambiental)"
+            }, {
+                latitude: -23.4399156,
+                longitude: -46.5657584,
+                evento: "Desafio da Natureza Urbana",
+                data: "25/04/2025",
+                inicio: "8h",
+                termino: "16h",
+                atividade: "Atividade de observação da natureza",
+                local: "Parque Estadual da Cantareira - Núcleo Cabuçu",
+                endereco: "Av. Pedro de Sousa Lopes, 7.903 - Jardim São Luís - Guarulhos - SP, 07075-170",
+                acesso: "PÚBLICO",
+                contato: "Monitores do Parque Estadual da Cantareira"
+            }, {
+                latitude: -23.5653415,
+                longitude: -46.7307825,
+                evento: "Desafio da Natureza Urbana ",
+                data: "26/04/2025",
+                inicio: "8h",
+                termino: "12h",
+                atividade: "Atividade de observação da natureza",
+                local: "Instituto de Biociências da USP, Reserva do IB e Herbário da USP.",
+                endereco: "Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 ",
+                acesso: "PÚBLICO",
+                contato: "Luiz Fernando/CEO +55 11 99938-9949 / Felipe"
+            }, {
+                latitude: -23.6053438,
+                longitude: -46.6990833,
+                evento: "Desafio da Natureza Urbana ",
+                data: "26/04/2025",
+                inicio: "7h30",
+                termino: "11h",
+                atividade: "Saída para observação da biodiversidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR",
+                local: "Projeto CAPA - Centro de Apoio e Proteção Animal",
+                endereco: "Av. Magalhães De Castro, R. Pedro Avancine - Jardim Panorama, São Paulo - SP, 05679-160",
+                acesso: "PÚBLICO",
+                contato: "Luccas Longo & Mariana Aidar/CAPA"
+            }, {
+                latitude: -23.6053438,
+                longitude: -46.6990833,
+                evento: "Desafio da Natureza Urbana ",
+                data: "27/04/2025",
+                inicio: "7h30",
+                termino: "11h",
+                atividade: "Saída para observação da biodiversidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR",
+                local: "Projeto CAPA - Centro de Apoio e Proteção Animal",
+                endereco: "Av. Magalhães De Castro, R. Pedro Avancine - Jardim Panorama, São Paulo - SP, 05679-160",
+                acesso: "PÚBLICO",
+                contato: "Luccas Longo & Mariana Aidar/CAPA"
+            }
+        ];
+
+        // Add markers for each event
+        const markers = [];
+
+        events.forEach(event => {
+            const marker = L.marker([event.latitude, event.longitude], {
+                icon: L.icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                })
+            });
+
+            const popupContent = `
+                <div style="width: 250px">
+                    <h4>${event.evento}</h4>
+                    <p><b>Data:</b> ${event.data}</p>
+                    <p><b>Horário:</b> ${event.inicio} - ${event.termino}</p>
+                    <p><b>Atividade:</b> ${event.atividade}</p>
+                    <p><b>Local:</b> ${event.local}</p>
+                    <p><b>Endereço:</b> ${event.endereco}</p>
+                    <p><b>Acesso:</b> ${event.acesso}</p>
+                    <p><b>Articulação</b> ${event.contato}</p>
+                </div>
+            `;
+
+            marker.bindPopup(popupContent);
+            marker.bindTooltip(`${event.evento} - ${event.data}`);
+            marker.addTo(map);
+
+            markers.push({
+                marker: marker,
+                date: event.data
+            });
+        });
+
+        // Filter events by date
+        document.getElementById('date-filter').addEventListener('change', function() {
+            const selectedDate = this.value;
+
+            markers.forEach(item => {
+                if (selectedDate === 'all' || item.date === selectedDate) {
+                    map.addLayer(item.marker);
+                } else {
+                    map.removeLayer(item.marker);
+                }
+            });
+        });
+
+        // Reset filter button
+        document.getElementById('reset-filter').addEventListener('click', function() {
+            document.getElementById('date-filter').value = 'all';
+            markers.forEach(item => {
+                map.addLayer(item.marker);
+            });
+        });
+    </script>
+</body>
+</html>

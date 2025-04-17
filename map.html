@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5061837d88ab63f99ec6c6fa8728a926 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5061837d88ab63f99ec6c6fa8728a926" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5061837d88ab63f99ec6c6fa8728a926 = L.map(
+                "map_5061837d88ab63f99ec6c6fa8728a926",
+                {
+                    center: [-23.55, -46.63],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4097452b08f058887839924b7d35ed1b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4097452b08f058887839924b7d35ed1b.addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var marker_3a53595b5a087ce1b59c0891c81205bd = L.marker(
+                [-23.4429979, -46.565857],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_c8784ec12e4664097a5618cab622ac67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_514020653589f0e0fb18536a49568614 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d84efd1924f39ced2191e90916acd359 = $(`<div id="html_d84efd1924f39ced2191e90916acd359" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 9h - 16h</p>         <p><b>Atividade:</b> Saída de observação</p>         <p><b>Local:</b> Parque Estadual Cantareira - Núcleo Cabuçu</p>         <p><b>Endereço:</b> Av. Pedro de Souza Lopes 7903, Guarulhos, SP, 07074-000</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Juliana França</p>     </div>     </div>`)[0];
+                popup_514020653589f0e0fb18536a49568614.setContent(html_d84efd1924f39ced2191e90916acd359);
+            
+        
+
+        marker_3a53595b5a087ce1b59c0891c81205bd.bindPopup(popup_514020653589f0e0fb18536a49568614)
+        ;
+
+        
+    
+    
+            marker_3a53595b5a087ce1b59c0891c81205bd.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a53595b5a087ce1b59c0891c81205bd.setIcon(icon_c8784ec12e4664097a5618cab622ac67);
+            
+    
+            var marker_4b2bc5ed66fd85beaae364d51ca831a3 = L.marker(
+                [-23.459023, -46.75530939999999],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_582473a2ab5513ee393ceb55cac3eaa8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39104084bc3b25edca7b1e5704f339b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81d7480bb54ccd26951731b2694a622e = $(`<div id="html_81d7480bb54ccd26951731b2694a622e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 9h - 12h</p>         <p><b>Atividade:</b> Saída de observação</p>         <p><b>Local:</b> Parque Estadual Jaraguá</p>         <p><b>Endereço:</b> Rua Antônio Cardoso Nogueira, 539, São Paulo</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b>  Juliana França</p>     </div>     </div>`)[0];
+                popup_39104084bc3b25edca7b1e5704f339b3.setContent(html_81d7480bb54ccd26951731b2694a622e);
+            
+        
+
+        marker_4b2bc5ed66fd85beaae364d51ca831a3.bindPopup(popup_39104084bc3b25edca7b1e5704f339b3)
+        ;
+
+        
+    
+    
+            marker_4b2bc5ed66fd85beaae364d51ca831a3.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b2bc5ed66fd85beaae364d51ca831a3.setIcon(icon_582473a2ab5513ee393ceb55cac3eaa8);
+            
+    
+            var marker_2031bf0bf4de843f5639b4d43d30c060 = L.marker(
+                [-23.5791485, -46.7264135],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_5b33690cbf5c1dcb091f12ed072ca44b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e085a033a8a06fa0a544ec585dfd1781 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14fd2fa7b1d277435ac61708d96593b6 = $(`<div id="html_14fd2fa7b1d277435ac61708d96593b6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 9h - 11h</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza</p>         <p><b>Local:</b> Parque Previdência</p>         <p><b>Endereço:</b> Rua Pedro Peccinini, 88 , São Paulo - SP, 05532-030</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Marcio Moreira</p>     </div>     </div>`)[0];
+                popup_e085a033a8a06fa0a544ec585dfd1781.setContent(html_14fd2fa7b1d277435ac61708d96593b6);
+            
+        
+
+        marker_2031bf0bf4de843f5639b4d43d30c060.bindPopup(popup_e085a033a8a06fa0a544ec585dfd1781)
+        ;
+
+        
+    
+    
+            marker_2031bf0bf4de843f5639b4d43d30c060.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2031bf0bf4de843f5639b4d43d30c060.setIcon(icon_5b33690cbf5c1dcb091f12ed072ca44b);
+            
+    
+            var marker_4b0fc09af0b2a710d1c1a71e1eb4e39c = L.marker(
+                [-23.5653415, -46.7307825],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_cf645c5c729f67c63b6c4457910263b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5f1d29ef1980a05ebf0941a5e6b6ad7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe2f3f33748337b3e7e91ce001001748 = $(`<div id="html_fe2f3f33748337b3e7e91ce001001748" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 10h - 11h30</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza - Alunos Biologia USP</p>         <p><b>Local:</b> Matinha da Bio - USP</p>         <p><b>Endereço:</b> Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 </p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Enrico e José (RBN) + EB</p>     </div>     </div>`)[0];
+                popup_b5f1d29ef1980a05ebf0941a5e6b6ad7.setContent(html_fe2f3f33748337b3e7e91ce001001748);
+            
+        
+
+        marker_4b0fc09af0b2a710d1c1a71e1eb4e39c.bindPopup(popup_b5f1d29ef1980a05ebf0941a5e6b6ad7)
+        ;
+
+        
+    
+    
+            marker_4b0fc09af0b2a710d1c1a71e1eb4e39c.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b0fc09af0b2a710d1c1a71e1eb4e39c.setIcon(icon_cf645c5c729f67c63b6c4457910263b1);
+            
+    
+            var marker_f75e298de62343a268672ac2e8bfdbe4 = L.marker(
+                [-23.5653415, -46.7307825],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_cb43d52b7685eca6460506a5f14ceaaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0769afacae70a497b4c0afc35b73864a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42cd4fee9d6ad2cb12aa9bcbeb74787b = $(`<div id="html_42cd4fee9d6ad2cb12aa9bcbeb74787b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 14h - 15h30</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza - Alunos Biologia USP</p>         <p><b>Local:</b> Matinha da Bio - USP</p>         <p><b>Endereço:</b> Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 </p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b>  Enrico e José (RBN) + EB</p>     </div>     </div>`)[0];
+                popup_0769afacae70a497b4c0afc35b73864a.setContent(html_42cd4fee9d6ad2cb12aa9bcbeb74787b);
+            
+        
+
+        marker_f75e298de62343a268672ac2e8bfdbe4.bindPopup(popup_0769afacae70a497b4c0afc35b73864a)
+        ;
+
+        
+    
+    
+            marker_f75e298de62343a268672ac2e8bfdbe4.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f75e298de62343a268672ac2e8bfdbe4.setIcon(icon_cb43d52b7685eca6460506a5f14ceaaf);
+            
+    
+            var marker_f65428251bdefaf8b879fdefa2ed28ba = L.marker(
+                [-23.8416118, -46.7185262],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_b97df671710524e079ffefc2404e80eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78ac5613c9da2976f9b873d359fd2be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_123d9c0e11fb49d906aaa1796db9091d = $(`<div id="html_123d9c0e11fb49d906aaa1796db9091d" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana - Construindo um Condomínio de Insetos</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 09h - 11h</p>         <p><b>Atividade:</b> Ensinar os alunos sobre a importância dos insetos para a biodiversidade urbana e como podemos ajudar a criar espaços que favoreçam sua presença e sobrevivência.</p>         <p><b>Local:</b> UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia</p>         <p><b>Endereço:</b> Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> José Francisco Armelin (UMAPAZ)</p>     </div>     </div>`)[0];
+                popup_78ac5613c9da2976f9b873d359fd2be9.setContent(html_123d9c0e11fb49d906aaa1796db9091d);
+            
+        
+
+        marker_f65428251bdefaf8b879fdefa2ed28ba.bindPopup(popup_78ac5613c9da2976f9b873d359fd2be9)
+        ;
+
+        
+    
+    
+            marker_f65428251bdefaf8b879fdefa2ed28ba.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - Construindo um Condomínio de Insetos - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f65428251bdefaf8b879fdefa2ed28ba.setIcon(icon_b97df671710524e079ffefc2404e80eb);
+            
+    
+            var marker_42ab7fde84844a6208e5e916a340bd4a = L.marker(
+                [-23.5810587, -46.72699859999999],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_e76c351dc791c0553cf2dffbbc8ea603 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e82801202efd0a89fb4200ab2376e51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f421ddf848ab6db94d9ca4dd6e961b7c = $(`<div id="html_f421ddf848ab6db94d9ca4dd6e961b7c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 09h - 11h</p>         <p><b>Atividade:</b> Identificação das Espécies na Trilha do Jequitibá</p>         <p><b>Local:</b> CEA Previdência – Parque Previdência</p>         <p><b>Endereço:</b> Rua Pedro Peccinini, 88 – Instituto Previdência</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Juliana (UMAPAZ)</p>     </div>     </div>`)[0];
+                popup_4e82801202efd0a89fb4200ab2376e51.setContent(html_f421ddf848ab6db94d9ca4dd6e961b7c);
+            
+        
+
+        marker_42ab7fde84844a6208e5e916a340bd4a.bindPopup(popup_4e82801202efd0a89fb4200ab2376e51)
+        ;
+
+        
+    
+    
+            marker_42ab7fde84844a6208e5e916a340bd4a.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42ab7fde84844a6208e5e916a340bd4a.setIcon(icon_e76c351dc791c0553cf2dffbbc8ea603);
+            
+    
+            var marker_f7c384001d73c41e7a0790d904b60e9e = L.marker(
+                [-23.5185372, -46.7365055],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_477c70a14889a2582f73b0cdf9d6a3a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4938bee6c3590baa4eb0b2cee703ead0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_639d617b3289cbfbda65b720f56ba687 = $(`<div id="html_639d617b3289cbfbda65b720f56ba687" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Vem Passarinhar Sampa edição Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 7h - 10h</p>         <p><b>Atividade:</b> Atividade de observação da natureza com foco na observação de aves</p>         <p><b>Local:</b> Parque Municipal Leopoldina - Orlando Villas-Bôas</p>         <p><b>Endereço:</b> Av. Emb. Macedo Soares, 8000 - Vila Leopoldina, São Paulo - SP, 05307-200</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Giovanni (DFS/SVMA)</p>     </div>     </div>`)[0];
+                popup_4938bee6c3590baa4eb0b2cee703ead0.setContent(html_639d617b3289cbfbda65b720f56ba687);
+            
+        
+
+        marker_f7c384001d73c41e7a0790d904b60e9e.bindPopup(popup_4938bee6c3590baa4eb0b2cee703ead0)
+        ;
+
+        
+    
+    
+            marker_f7c384001d73c41e7a0790d904b60e9e.bindTooltip(
+                `<div>
+                     Vem Passarinhar Sampa edição Desafio da Natureza Urbana - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7c384001d73c41e7a0790d904b60e9e.setIcon(icon_477c70a14889a2582f73b0cdf9d6a3a0);
+            
+    
+            var marker_45280443448c82f38d391e4941416a9c = L.marker(
+                [-23.5621068, -46.72500429999999],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_ce7bc0bbe0aecadf09014456e84db3cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d78d2cc7790aaf26aefc7cdee2585be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26bddb237b79df3043941e3503ba90d9 = $(`<div id="html_26bddb237b79df3043941e3503ba90d9" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 9h - 12h</p>         <p><b>Atividade:</b> Observação de Natureza</p>         <p><b>Local:</b> USP</p>         <p><b>Endereço:</b> Av. Prof. Luciano Gualberto, 380 , São Paulo - SP, 05508-010</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Marcio Moreira - voluntariado alunos Poli</p>     </div>     </div>`)[0];
+                popup_8d78d2cc7790aaf26aefc7cdee2585be.setContent(html_26bddb237b79df3043941e3503ba90d9);
+            
+        
+
+        marker_45280443448c82f38d391e4941416a9c.bindPopup(popup_8d78d2cc7790aaf26aefc7cdee2585be)
+        ;
+
+        
+    
+    
+            marker_45280443448c82f38d391e4941416a9c.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45280443448c82f38d391e4941416a9c.setIcon(icon_ce7bc0bbe0aecadf09014456e84db3cd);
+            
+    
+            var marker_06e516aeb8aa7acdbac429316728f82b = L.marker(
+                [-23.6492671, -46.6230801],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_a5e7d243048ee7beea60be51b4fd1b28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2b9e29179d1088761e1dcda96a366c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4269f83998e1f615bf72c1078706bdfd = $(`<div id="html_4269f83998e1f615bf72c1078706bdfd" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 9h - 12h</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza</p>         <p><b>Local:</b> Parque CienTec da USP</p>         <p><b>Endereço:</b> Av. Miguel Estefano, 4200 - Vila Água Funda, São Paulo - SP, 04301-904</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Luca (CienTec) + Enrico (RBN)</p>     </div>     </div>`)[0];
+                popup_c2b9e29179d1088761e1dcda96a366c4.setContent(html_4269f83998e1f615bf72c1078706bdfd);
+            
+        
+
+        marker_06e516aeb8aa7acdbac429316728f82b.bindPopup(popup_c2b9e29179d1088761e1dcda96a366c4)
+        ;
+
+        
+    
+    
+            marker_06e516aeb8aa7acdbac429316728f82b.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06e516aeb8aa7acdbac429316728f82b.setIcon(icon_a5e7d243048ee7beea60be51b4fd1b28);
+            
+    
+            var marker_b719cd4f65bd65a1810bb646064ae8a7 = L.marker(
+                [-23.8120878, -46.7268368],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_cca79498f4d5fb9cb91b8a0a4b46b643 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb2e3a5be127fa618093458485db3c63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a63ad36c1175b7c7d470f4993f8196b = $(`<div id="html_2a63ad36c1175b7c7d470f4993f8196b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 18h - 21h</p>         <p><b>Atividade:</b> Observação de Natureza</p>         <p><b>Local:</b> PNM Itaim</p>         <p><b>Endereço:</b> R. Amaro Alves do Rosário, 2676 - Parelheiros, São Paulo - SP, 04884-000</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b>  Luccas Longo</p>     </div>     </div>`)[0];
+                popup_bb2e3a5be127fa618093458485db3c63.setContent(html_2a63ad36c1175b7c7d470f4993f8196b);
+            
+        
+
+        marker_b719cd4f65bd65a1810bb646064ae8a7.bindPopup(popup_bb2e3a5be127fa618093458485db3c63)
+        ;
+
+        
+    
+    
+            marker_b719cd4f65bd65a1810bb646064ae8a7.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b719cd4f65bd65a1810bb646064ae8a7.setIcon(icon_cca79498f4d5fb9cb91b8a0a4b46b643);
+            
+    
+            var marker_7bdf0e471bac3cbb95ce334e102bc254 = L.marker(
+                [-23.8416118, -46.7185262],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_de9dc75792b297a195df04c036760d46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f76d7f7c65b488831c568013242333a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70aa6011af3d9667a611941a0c9550be = $(`<div id="html_70aa6011af3d9667a611941a0c9550be" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 09h - 11h</p>         <p><b>Atividade:</b> Visita Monitorada nas Trilhas do Parque Nascentes do Ribeirão Colônia</p>         <p><b>Local:</b> UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia</p>         <p><b>Endereço:</b> Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> José Francisco Armelin (UMAPAZ)</p>     </div>     </div>`)[0];
+                popup_0f76d7f7c65b488831c568013242333a.setContent(html_70aa6011af3d9667a611941a0c9550be);
+            
+        
+
+        marker_7bdf0e471bac3cbb95ce334e102bc254.bindPopup(popup_0f76d7f7c65b488831c568013242333a)
+        ;
+
+        
+    
+    
+            marker_7bdf0e471bac3cbb95ce334e102bc254.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bdf0e471bac3cbb95ce334e102bc254.setIcon(icon_de9dc75792b297a195df04c036760d46);
+            
+    
+            var marker_50b135720398c933774d99a9a7bd50be = L.marker(
+                [-23.892974, -46.617341],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_097db23b84487a31293f4b038e3265d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d29fb77c002d0de43911a6663dfa793d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4dacd1eb9110b9a11291f2b4ed7c2573 = $(`<div id="html_4dacd1eb9110b9a11291f2b4ed7c2573" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana & Dia da Anta</h4>         <p><b>Data:</b> 27/04/2025</p>         <p><b>Horário:</b> 8h - 15h</p>         <p><b>Atividade:</b> Observação de Natureza no Dia da Anta</p>         <p><b>Local:</b> RPPN Sítio Curucutu</p>         <p><b>Endereço:</b> Estrada do Capivari, Estr. do Curucutu, 13041, São Paulo - SP, 04895-090</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Luccas Longo</p>     </div>     </div>`)[0];
+                popup_d29fb77c002d0de43911a6663dfa793d.setContent(html_4dacd1eb9110b9a11291f2b4ed7c2573);
+            
+        
+
+        marker_50b135720398c933774d99a9a7bd50be.bindPopup(popup_d29fb77c002d0de43911a6663dfa793d)
+        ;
+
+        
+    
+    
+            marker_50b135720398c933774d99a9a7bd50be.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana & Dia da Anta - 27/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50b135720398c933774d99a9a7bd50be.setIcon(icon_097db23b84487a31293f4b038e3265d9);
+            
+    
+            var marker_2ac382e31c9ab529027723fa65a934b6 = L.marker(
+                [-23.5653415, -46.7307825],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_c787e098283cb3d7b033d8c41841a608 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a3aad870c84a8eef40e8d571ef7121d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39f0881e0e022fc9346f9f43c6f258fe = $(`<div id="html_39f0881e0e022fc9346f9f43c6f258fe" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 28/04/2025</p>         <p><b>Horário:</b> 10h - 11h30</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza - Alunos Biologia USP</p>         <p><b>Local:</b> Matinha da Bio - USP</p>         <p><b>Endereço:</b> Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 </p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Enrico e José (RBN) + EB</p>     </div>     </div>`)[0];
+                popup_2a3aad870c84a8eef40e8d571ef7121d.setContent(html_39f0881e0e022fc9346f9f43c6f258fe);
+            
+        
+
+        marker_2ac382e31c9ab529027723fa65a934b6.bindPopup(popup_2a3aad870c84a8eef40e8d571ef7121d)
+        ;
+
+        
+    
+    
+            marker_2ac382e31c9ab529027723fa65a934b6.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 28/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ac382e31c9ab529027723fa65a934b6.setIcon(icon_c787e098283cb3d7b033d8c41841a608);
+            
+    
+            var marker_26e95bfa8cf02f143ffdcb5172ad1eb8 = L.marker(
+                [-23.5653415, -46.7307825],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_3f88d4111c44d16052c990cdf085fc34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c79cd4d7f250530fa2f2d7ee428a6e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cd7b2e9f9654eb343bf15da49d82441 = $(`<div id="html_2cd7b2e9f9654eb343bf15da49d82441" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 28/04/2025</p>         <p><b>Horário:</b> 14h - 15h30</p>         <p><b>Atividade:</b> Observação e sensibilização de natureza - Alunos Biologia USP</p>         <p><b>Local:</b> Matinha da Bio - USP</p>         <p><b>Endereço:</b> Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 </p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Enrico e José (RBN) + EB</p>     </div>     </div>`)[0];
+                popup_5c79cd4d7f250530fa2f2d7ee428a6e6.setContent(html_2cd7b2e9f9654eb343bf15da49d82441);
+            
+        
+
+        marker_26e95bfa8cf02f143ffdcb5172ad1eb8.bindPopup(popup_5c79cd4d7f250530fa2f2d7ee428a6e6)
+        ;
+
+        
+    
+    
+            marker_26e95bfa8cf02f143ffdcb5172ad1eb8.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 28/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26e95bfa8cf02f143ffdcb5172ad1eb8.setIcon(icon_3f88d4111c44d16052c990cdf085fc34);
+            
+    
+            var marker_0316ebe29db8e7ff0963a3815a194ccb = L.marker(
+                [-23.8416118, -46.7185262],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_34cc4b11587ddd24d4b1cb392f1bd45a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b42303fbdf17112de0959584c425e7b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5390740fd040951c5f9ad4ee48961772 = $(`<div id="html_5390740fd040951c5f9ad4ee48961772" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Abelhando: Observando e Registrando Abelhas - Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 28/04/2025</p>         <p><b>Horário:</b> 09h - 11h</p>         <p><b>Atividade:</b> Sensibilizar os alunos para a importância das abelhas na polinização e promover a observação e o registro de suas interações com as plantas no ambiente urbano.</p>         <p><b>Local:</b> UMAPAZ Escola de Agroecologia de Parelheiros – Parque Nascente do Ribeirão Colônia</p>         <p><b>Endereço:</b> Estr. dá Colônia Mário Reimberg Christe, 2500 - Jardim Novo - Parelheiros</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> José Francisco Armelin (UMAPAZ)</p>     </div>     </div>`)[0];
+                popup_b42303fbdf17112de0959584c425e7b4.setContent(html_5390740fd040951c5f9ad4ee48961772);
+            
+        
+
+        marker_0316ebe29db8e7ff0963a3815a194ccb.bindPopup(popup_b42303fbdf17112de0959584c425e7b4)
+        ;
+
+        
+    
+    
+            marker_0316ebe29db8e7ff0963a3815a194ccb.bindTooltip(
+                `<div>
+                     Abelhando: Observando e Registrando Abelhas - Desafio da Natureza Urbana - 28/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0316ebe29db8e7ff0963a3815a194ccb.setIcon(icon_34cc4b11587ddd24d4b1cb392f1bd45a);
+            
+    
+            var marker_60a857b0ba26a6475af80a28288f7ff2 = L.marker(
+                [-23.5942404, -46.6628536],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_b4ed714e886eeab12a63ab93b463c48d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea26826a373f4d9568da297f6e5febb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a35372267ffa9058a18eff25e7ddede5 = $(`<div id="html_a35372267ffa9058a18eff25e7ddede5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 28/04/2025</p>         <p><b>Horário:</b> 08h - 10h</p>         <p><b>Atividade:</b> Atividade de observação da natureza com foco na observação de aves</p>         <p><b>Local:</b> Viveiro Manequinho Lopes</p>         <p><b>Endereço:</b> Av. Quarto Centenário, 1268 - Jardim Luzitania, São Paulo - SP, 04030-000</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Requer inscrinção / Giovanni (DFS), Anderson e Thabata (Aventura Ambiental)</p>     </div>     </div>`)[0];
+                popup_ea26826a373f4d9568da297f6e5febb8.setContent(html_a35372267ffa9058a18eff25e7ddede5);
+            
+        
+
+        marker_60a857b0ba26a6475af80a28288f7ff2.bindPopup(popup_ea26826a373f4d9568da297f6e5febb8)
+        ;
+
+        
+    
+    
+            marker_60a857b0ba26a6475af80a28288f7ff2.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 28/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60a857b0ba26a6475af80a28288f7ff2.setIcon(icon_b4ed714e886eeab12a63ab93b463c48d);
+            
+    
+            var marker_e02ab68f9975ae3518f883a8dbad57bd = L.marker(
+                [-23.5942404, -46.6628536],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_0d8712678eda52bb61c873a50827b07b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b1f4a80f6bac4fee6cd7b4e23f94386 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45023b6dfe7b561df3d545bfb8d1c1d4 = $(`<div id="html_45023b6dfe7b561df3d545bfb8d1c1d4" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 28/04/2025</p>         <p><b>Horário:</b> 14h - 16h</p>         <p><b>Atividade:</b> Atividade de observação da natureza</p>         <p><b>Local:</b> Viveiro Manequinho Lopes</p>         <p><b>Endereço:</b> Av. Quarto Centenário, 1268 - Jardim Luzitania, São Paulo - SP, 04030-000</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Requer inscrinção / Giovanni (DFS), Anderson e Thabata (Aventura Ambiental)</p>     </div>     </div>`)[0];
+                popup_5b1f4a80f6bac4fee6cd7b4e23f94386.setContent(html_45023b6dfe7b561df3d545bfb8d1c1d4);
+            
+        
+
+        marker_e02ab68f9975ae3518f883a8dbad57bd.bindPopup(popup_5b1f4a80f6bac4fee6cd7b4e23f94386)
+        ;
+
+        
+    
+    
+            marker_e02ab68f9975ae3518f883a8dbad57bd.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 28/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e02ab68f9975ae3518f883a8dbad57bd.setIcon(icon_0d8712678eda52bb61c873a50827b07b);
+            
+    
+            var marker_5e5a06ecdc59e23bef7da607925e9014 = L.marker(
+                [-23.4399156, -46.5657584],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_2e4b980cf4a1b867dc3682684db95355 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93f43cb65077a9251dccc2dc6bc8ccc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_977c298276bb8585739a974a16d9a94b = $(`<div id="html_977c298276bb8585739a974a16d9a94b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana</h4>         <p><b>Data:</b> 25/04/2025</p>         <p><b>Horário:</b> 8h - 16h</p>         <p><b>Atividade:</b> Atividade de observação da natureza</p>         <p><b>Local:</b> Parque Estadual da Cantareira - Núcleo Cabuçu</p>         <p><b>Endereço:</b> Av. Pedro de Sousa Lopes, 7.903 - Jardim São Luís - Guarulhos - SP, 07075-170</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Monitores do Parque Estadual da Cantareira</p>     </div>     </div>`)[0];
+                popup_93f43cb65077a9251dccc2dc6bc8ccc1.setContent(html_977c298276bb8585739a974a16d9a94b);
+            
+        
+
+        marker_5e5a06ecdc59e23bef7da607925e9014.bindPopup(popup_93f43cb65077a9251dccc2dc6bc8ccc1)
+        ;
+
+        
+    
+    
+            marker_5e5a06ecdc59e23bef7da607925e9014.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana - 25/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e5a06ecdc59e23bef7da607925e9014.setIcon(icon_2e4b980cf4a1b867dc3682684db95355);
+            
+    
+            var marker_a7ed37581f4556b54dffc7bfe1f51776 = L.marker(
+                [-23.5653415, -46.7307825],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_553d98bfb9020b845bc053dd39dfa3cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39ae7b27defe66eb4e9efad08405bcfd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30b1692825ad84c8785d69bef052d289 = $(`<div id="html_30b1692825ad84c8785d69bef052d289" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana </h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 8h - 12h</p>         <p><b>Atividade:</b> Atividade de observação da natureza</p>         <p><b>Local:</b> Instituto de Biociências da USP, Reserva do IB e Herbário da USP.</p>         <p><b>Endereço:</b> Rua do Matão, 277 - Cidade Universitária - Butantã, 05508-090 </p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Luiz Fernando/CEO +55 11 99938-9949 / Felipe</p>     </div>     </div>`)[0];
+                popup_39ae7b27defe66eb4e9efad08405bcfd.setContent(html_30b1692825ad84c8785d69bef052d289);
+            
+        
+
+        marker_a7ed37581f4556b54dffc7bfe1f51776.bindPopup(popup_39ae7b27defe66eb4e9efad08405bcfd)
+        ;
+
+        
+    
+    
+            marker_a7ed37581f4556b54dffc7bfe1f51776.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana  - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7ed37581f4556b54dffc7bfe1f51776.setIcon(icon_553d98bfb9020b845bc053dd39dfa3cd);
+            
+    
+            var marker_771308c1676578c56f54924bef466fc3 = L.marker(
+                [-23.6053438, -46.6990833],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_df6d256e0bdb8248286671f8dd0bd215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42219ba429aec3a4496263839dff70cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35ea514628cb1cd1a991063d6e368f5d = $(`<div id="html_35ea514628cb1cd1a991063d6e368f5d" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana </h4>         <p><b>Data:</b> 26/04/2025</p>         <p><b>Horário:</b> 7h30 - 11h</p>         <p><b>Atividade:</b> Saída para observação da biodiversidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR</p>         <p><b>Local:</b> Projeto CAPA - Centro de Apoio e Proteção Animal</p>         <p><b>Endereço:</b> Av. Magalhães De Castro, R. Pedro Avancine - Jardim Panorama, São Paulo - SP, 05679-160</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Luccas Longo & Mariana Aidar/CAPA</p>     </div>     </div>`)[0];
+                popup_42219ba429aec3a4496263839dff70cd.setContent(html_35ea514628cb1cd1a991063d6e368f5d);
+            
+        
+
+        marker_771308c1676578c56f54924bef466fc3.bindPopup(popup_42219ba429aec3a4496263839dff70cd)
+        ;
+
+        
+    
+    
+            marker_771308c1676578c56f54924bef466fc3.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana  - 26/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_771308c1676578c56f54924bef466fc3.setIcon(icon_df6d256e0bdb8248286671f8dd0bd215);
+            
+    
+            var marker_3d2dade2a142bf6d4eff01216df9e68f = L.marker(
+                [-23.6053438, -46.6990833],
+                {
+}
+            ).addTo(map_5061837d88ab63f99ec6c6fa8728a926);
+        
+    
+            var icon_bacf30dadd810da19fb2306b9f2bed5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f3949c3a933eec9d780138738b183ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0cf75e10ea66b49044f50ea646bfdd5 = $(`<div id="html_e0cf75e10ea66b49044f50ea646bfdd5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px">         <h4>Desafio da Natureza Urbana </h4>         <p><b>Data:</b> 27/04/2025</p>         <p><b>Horário:</b> 7h30 - 11h</p>         <p><b>Atividade:</b> Saída para observação da biodiversidade do Pq Linear Bruno Covas - Ponto de encontro: POMAR</p>         <p><b>Local:</b> Projeto CAPA - Centro de Apoio e Proteção Animal</p>         <p><b>Endereço:</b> Av. Magalhães De Castro, R. Pedro Avancine - Jardim Panorama, São Paulo - SP, 05679-160</p>         <p><b>Acesso:</b> PÚBLICO</p>         <p><b>Articulação</b> Luccas Longo & Mariana Aidar/CAPA</p>     </div>     </div>`)[0];
+                popup_7f3949c3a933eec9d780138738b183ed.setContent(html_e0cf75e10ea66b49044f50ea646bfdd5);
+            
+        
+
+        marker_3d2dade2a142bf6d4eff01216df9e68f.bindPopup(popup_7f3949c3a933eec9d780138738b183ed)
+        ;
+
+        
+    
+    
+            marker_3d2dade2a142bf6d4eff01216df9e68f.bindTooltip(
+                `<div>
+                     Desafio da Natureza Urbana  - 27/04/2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d2dade2a142bf6d4eff01216df9e68f.setIcon(icon_bacf30dadd810da19fb2306b9f2bed5e);
+            
+</script>
+</html>
